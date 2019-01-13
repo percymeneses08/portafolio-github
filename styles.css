@@ -1,0 +1,300 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  color: white;
+  margin: 0;
+}
+
+h1 strong {
+  color: #273c75;
+}
+
+h2 {
+  color: #273c75;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero {
+  height: 300px;
+  /* background-image: url('../images/portada.jpg'); */
+  background-color: #44bd32;
+  /* background-size: 500px; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.project {
+  border-radius: 10px;
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px #bebebe;
+}
+
+.proyect-course,
+.proyect-date,
+.proyect-url {
+  margin: 10px 0;
+}
+
+.proyect-description {
+  font-size: 20px;
+}
+
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.proyect-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.proyect-details {
+  /* estos son las medidas del espacio que le pertenece a la clase "proyect" */
+  width: 500px;
+  /* height: 100px; */
+}
+
+.proyect-image-container {
+  width: 500px;
+}
+
+.header {
+  background-color: #44bd32;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 70px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  /* esto de abajo es para borrar los números */
+  list-style:none;
+}
+
+figure {
+  margin: 0;
+}
+
+.menu {
+  height: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+  justify-content: space-around;
+  margin-left: 28px;
+  font-size: 20px;
+}
+
+.link.contact-me {
+  border: 1px solid;
+  height: 30px;
+  padding: 1px 17px;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 17px;
+  /* text-align: center; */
+}
+
+.footer {
+  background-color: #1d252c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-list-title {
+  margin-left: 20px;
+}
+
+.event {
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f4fbff;
+  box-shadow: 0px 1px 5px #bebebe;
+}
+
+.event-image-container {
+  width: inherit;
+}
+
+.event img {
+  width: inherit;
+  height: 200px;
+  /* esto de abajo es para que la imagen no quede deformada */
+  object-fit: cover;
+}
+
+.event-detail {
+  margin: 20px 40px;
+  background: white;
+  /* esto de abajo es para que el texto suba */
+  margin-top: -40px;
+  /* esto de abajo es para que el detalle del evento esté delante de la imagen */
+  position: relative;
+  padding: 20px;
+  /* no usar just... */
+  text-align: center;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  color: #273c75;
+  /* el borde asimila por defecto el color de su texto */
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #273c75;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.facebook {
+  background-image: url('../images/facebook.svg');
+}
+
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
+}
+
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');
+}
+
+.social-link.linkedin {
+  background-image: url('../images/linkedin.svg');
+}
+
+.social-link.github {
+  background-image: url('../images/github.svg');
+}
+
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px 20px 5px 25px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  margin-top: 5px;
+  background: transparent;
+  color: white;
+  padding: 10px 20px 10px 25px;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  height: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  flex-wrap: inherit;
+}
