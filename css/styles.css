@@ -228,13 +228,22 @@ figure {
 /* Esto es para que la sección con nombre de clase "certificates" esté 
 centrada con un ancho máximo de 1000 pixeles con un margen automático */
 .certificates {
-  width: 1000px;
-  margin: 0 auto;
   /* background: #dcdde1; */
-  background: white;
+  background: #fafafa;
+}
+
+.container.certificates-title {
+  display: flex;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
 .diplomas {
+  /* este width y margin no van en la clase certificates porque 
+  sino haríamos que el color de fondo también esté centrado */
+  width: 1000px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
