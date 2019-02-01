@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.post {
+  /* esto de abajo es para que cuando el puntero se sitúe sobre
+  la imagen, al presentarse la sombra el puntero se transforme
+  en una manito */
+  cursor: pointer;
+  /* esto de abajo es para que la clase overlay no me ocupe toda 
+  la pantalla, sino tome el mismo tamaño que la imagen */
+  position: relative;
+  /* esto de abajo es porque la clase post al estar dentro de 
+  una etiqeuta a no me deja achicar la imagen, entonces tengo 
+  que cambiarle el display por el de block, por ejemplo */
+  display: block;
+  /* entonces ya puedo modificar el tamaño */
+}
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  grid-gap: 28px;
+}
+.post-image{
+  margin: 0;
+}
+.post-image img {
+  width: 100%;
+  /* con esto de abajo 
+  le quito el margen de la parte de abajo de las imágenes */
+  vertical-align: top;
+}
+.post-overlay {
+  background: rgba(0, 0, 0, .4); 
+  /* esto de abajo es para que todo lo que esté dentro de la 
+  clase post-overlay se pueda superponer a la imagen correspondiente */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  /* por defecto esta clase no se va a ver */
+  display: none;
+
+  /* pero cuando el display se vuelva flex, 
+  entonces en ese momento utlizaremos esto de abajo */
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.post:hover .post-overlay {
+  display: flex;
+}
+.post-likes,
+.post-comments {
+  width: 80px;
+  margin: 5px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+.fas.fa-heart {
+  margin-right: 7px;
+}
+.fas.fa-comment{
+  margin-right: 7px;
+  /* Esto de abajo es para realizar un efecto espejo en el eje X a una imagen */
+  transform: scaleX(-1);
+}
+
+@media screen and (max-width: 768px) {
+  .post-list {
+    grid-gap: 3px;
+  }
+}
