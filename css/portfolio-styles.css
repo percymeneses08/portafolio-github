@@ -72,6 +72,10 @@ h2 {
 .project-url {
   margin: 10px 0;
 }
+.portfolio a {
+  text-decoration: none;
+  color: black;
+}
 
 .project-description {
   font-size: 20px;
@@ -272,23 +276,23 @@ centrada con un ancho máximo de 1000 pixeles con un margen automático */
 }
 
 .social-link.facebook {
-  background-image: url('../images/facebook.svg');
+  background-image: url('../images/portfolio-images/facebook.svg');
 }
 
 .social-link.instagram {
-  background-image: url('../images/instagram.svg');
+  background-image: url('../images/portfolio-images/instagram.svg');
 }
 
 .social-link.twitter {
-  background-image: url('../images/twitter.svg');
+  background-image: url('../images/portfolio-images/twitter.svg');
 }
 
 .social-link.linkedin {
-  background-image: url('../images/linkedin.svg');
+  background-image: url('../images/portfolio-images/linkedin.svg');
 }
 
 .social-link.github {
-  background-image: url('../images/github.svg');
+  background-image: url('../images/portfolio-images/github.svg');
 }
 
 .form-email input{
@@ -296,7 +300,7 @@ centrada con un ancho máximo de 1000 pixeles con un margen automático */
   border-style: solid;
   border-radius: 5px;
   padding: 5px 20px 5px 25px;
-  background-image: url('../images/envelope.svg');
+  background-image: url('../images/portfolio-images/envelope.svg');
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;

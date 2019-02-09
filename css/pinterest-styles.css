@@ -1,0 +1,135 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  /* grid-row: repeat(auto-fill, 30px); */
+  grid-gap: 5px;
+  justify-content: space-around;
+}
+.item {
+  position: relative;
+  margin: 5px 0;
+}
+.item-image {
+  display: flex;
+  justify-content: center;
+  margin: 0 30px;
+}
+.item-image img {
+  border-radius: 8px;
+  max-width: 125%;  
+  height: 250px;
+}
+.level-1 {
+  /* border: 5px solid red; */
+  grid-row-end: span 2;
+}
+.level-1 .item-image img {
+  height: 500px;
+}
+.level-2 {
+  /* border: 5px solid blue; */
+  grid-row-end: span 1.30;
+  display: none;
+}
+.level-2 .item-image img {
+  height: 370px;
+}
+.level-3 {
+  grid-row-end: span 1;
+}
+.level-4 {
+  grid-row-end: span 1;
+  /* display: none; */
+}
+/* .level-4 .item-image img {
+  height: 90px;
+} */
+.post-overlay {
+  cursor: zoom-in;
+
+  background: rgba(0, 0, 0, .4);
+  position: absolute;
+  top: -3%;
+  width: 95%;
+  height: 100%; 
+
+  border-radius: 6px;
+  margin: 6px;
+
+  display: none;
+}
+.item:hover .post-overlay{
+  display: flex;
+  /* si quieres un borde transparente no se usa border, 
+  sino el que le sigue */
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, .05);
+}
+.post-overlay button {
+  cursor: pointer;
+  position: absolute;
+}
+
+.save {
+  right: 8px;
+  top: 8px;
+
+  height: 41px;
+  width: 103.06px;
+  background-color: #e60023;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, 
+  "Segoe UI", "Roboto Oxygen-Sans", Ubuntu, Cantarell, 
+  "“Fira Sans”", "“Droid Sans”", "Helvetica Neue", 
+  Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", 
+  メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, 
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  border: 0;
+}
+/* esta es la clase de la imagen del pin */
+.fas.fa-thumbtack {
+  margin-right: 7px;
+  margin-left: -2px;
+}
+.save:hover {
+  background-color: #ad081b;
+}
+
+.link {
+  height: 38px;
+
+  bottom: 8px;
+  left: 8px;
+  
+  border: 0;
+  background-color: rgba(51, 51, 51, .8);
+  border-radius: 20px;
+  width: 150px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: -.4px;
+  font-weight: 700;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.fas.fa-external-link-square-alt {
+  margin-right: 7px;
+  margin-left: -2px;
+}
+
+.up {
+  border: 0;
+  background-color: rgba(51, 51, 51, .8);
+  color: white;
+  border-radius: 50px;
+  width: 34px;
+  height: 34px;
+  bottom: 8px;
+  right: 8px;
+}
