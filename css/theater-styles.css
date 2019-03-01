@@ -1,0 +1,245 @@
+body {
+  display: grid;
+  grid-template-columns: 129px 89%;
+  grid-template-areas: "header header"
+                       "menu lists";
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.header {
+  position: fixed;
+  width: 100vw;
+  background: white;
+
+  grid-area: header; 
+  box-shadow: 0 2px 20px #bebebe;
+
+  z-index: 2;
+}
+.header .container {
+  display: flex;
+  /* Para que estén centrados horizontalmente */
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.logo {
+  display: flex;
+}
+.logo figure {
+  margin-right: 0;
+}
+.pop-corn {
+  width: 49px;
+}
+.logo h1 {
+  -webkit-text-stroke: 1.3px #fc6a67;
+  color: white;
+  letter-spacing: -1.5px;
+}
+.header .container form {
+  margin-left: -30%;
+}
+.header .container form input{
+  width: 270%;
+  height: 35px;
+  border-radius: 10px;
+  border: solid #b1b1b9 1px;
+  font-size: 108%;
+  padding: 0 8px;
+}
+.header .container form ::placeholder {
+  color: #ccccd4;
+}
+.user {
+  display: inherit;
+  align-items: center;
+}
+.user h2 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.user figure {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  /* Aquí la imgaen se separa a su derecha e izquierda los cuales son importantes */
+  margin: 0 10px;
+}
+.user img {
+  width: 65px;
+}
+.user span {
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.menu {
+  position: fixed;
+  grid-area: menu;
+  height: 100vh;
+  width: 130px;
+  margin-top: 60px;
+
+  background: linear-gradient(to right, #ff565d, #f77a71);
+  color: white;
+  text-align: center;
+  display: grid;
+  /* No sé si poner auto en el medio de grid y rows */
+  grid-auto-rows: 76%;
+  font-size: 15px;
+}
+.menu .fas {
+  font-size: 210%;
+}
+.up div {
+  margin-top: 40px;
+}
+.menu p {
+  margin-top: 0;
+  font-weight: 400;
+  /* letter-spacing: -1.3px; */
+  font-size: 20px;
+}
+
+.lists {
+  grid-area: lists;
+  margin-top: 45px;
+}
+.now-theater,
+.critically-acclaimed,
+.not-miss {
+  /* border: solid green 1px; */
+  margin-left: 40px;
+}
+.movie {
+  width: 100%;
+  height: 250px;
+  /* border: solid blue 1px; */
+
+  display:grid;
+  /* Aquí va la cantidad de películas que hay en cada sección */
+  grid-template-columns: repeat(5, 400px);
+  grid-column-gap: 40px;
+}
+.movie:nth-of-type(1) {
+  /* background: blue; */
+  /* none para que solo se oculte, ya que con hidden se borra y no deja desplazarse */
+  overflow-y: hidden;
+}
+.movie article {
+  width: 100%;
+  /* width: 74%; */
+  height: 92%;
+  /* border: solid red 1px; */
+}
+.movie figure {
+  margin: 0;
+  height: inherit;
+}
+.movie img {
+  width: 100%;
+}
+.description {
+  position: relative;
+  background-color: rgba(255,88,94, .8);
+  color: white;
+  padding: 10px;
+  height: 30%;
+  margin-top: -74px;
+}
+.description h1 {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 130%;
+}
+.description p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 83%;
+  font-weight: 100;
+}
+
+.burger-button {
+  width: 40px;
+  height: 40px;
+  /* border-radius: 50%; */
+  /* background-color: rgba(0, 0, 0, .8); */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  /* position: fixed; */
+  left: 5px;
+  top: 5px;
+  color: #5f6368;
+  margin-top: 23px;
+  font-size: 20px;
+}
+.button-search {
+  color: #5f6368;
+  font-size: 20px;
+  margin-right: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .header .container form input {
+    width: 240%;
+  }
+  .user h2 {
+    display: none;
+  }
+  .lists {
+    width: 83vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  body {
+    grid-template-areas: "header"
+                         "lists";
+  }
+  .header .container form input {
+    width: 199%;
+  }
+  .user span {
+    display: none;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  .logo figure {
+    margin-left: 3px;
+  }
+  .burger-button {
+    display: flex;
+  }
+  .text-search {
+    display: none;
+  }
+  .button-search {
+    display: inherit;
+  }
+  .menu {
+    z-index: 2;
+    left: -100vw;
+    transition: .3s;
+  }
+  .menu.is-active {
+    left: 0;
+  }
+  .lists {
+    width: 100vw;
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    grid-template-columns: 129px 70%;
+  }
+}
+/* @media screen and (max-width: 1023px) {
+
+} */
