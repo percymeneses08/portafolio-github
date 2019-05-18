@@ -52,6 +52,7 @@ h2 {
 
 .portfolio {
   background: #fafafa;
+  padding-bottom: 20px;
 }
 
 .project {
@@ -337,6 +338,9 @@ figure {
   justify-content: inherit;
   flex-wrap: inherit;
 }
+.footer .container strong {
+  color: red;
+}
 
 @media screen and (max-width: 1919px) {
   .container {
@@ -378,12 +382,15 @@ figure {
   .project {
     justify-content: space-around;
   }
-  .project.instagram,
   .project.peso {
     display: none;
   }
   .project-image-container {
     width: 200px;
+  }
+  .project-image.platzi-video {
+    content: url("../images/platzi-video-images/proyectoPlatziVideo-mobile.png");
+    width: 100%;
   }
   .project-image.theater {
     content: url("../images/theater-images/proyectoTheater-mobile.png");
@@ -431,10 +438,11 @@ figure {
   .portfolio .container {
     padding: 0;
   }
-    .project {
-      justify-content: space-around;
-      width: 86vw;
-    }
+  .project {
+    justify-content: space-around;
+    width: 86vw;
+    display: grid;
+  }
     .project-description {
       font-size: 15px;
     }
@@ -442,9 +450,9 @@ figure {
     .project.peso {
       display: none;
     }
-    .project-image-container {
-      width: 200px;
-    }
+  .project-image-container {
+    width: 300px;
+  }
     .project-details {
       width: 300px;
     }
