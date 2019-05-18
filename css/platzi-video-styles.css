@@ -310,13 +310,16 @@ ol li {
   font-weight: 500;
   margin-left: 30px;
 }
-
-@media screen and (max-height: 721px) {
-  .sixth,
-  .seventh,
+@media screen and (max-height: 1081px) {
   .eighth,
   .ninth,
   .tenth {
+    display: none;
+  }
+}
+@media screen and (max-height: 721px) {
+  .sixth,
+  .seventh{
     display: none;
   }
   .my-playlist {
@@ -334,7 +337,7 @@ ol li {
                          "options"
                          "more";
   }
-  .title {
+  .header div .title {
     margin-left: -60px;
   }
   .header {
