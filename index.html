@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8"/>
-      <title>Percy Meneses Luyo</title>
-      <link rel="icon" type="image/png" href="images/portfolio-images/favicon.png"/>
-      <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-      <link rel="stylesheet" href="css/portfolio-styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Percy Meneses Luyo</title>
+    <link rel="icon" type="image/png" href="images/portfolio-images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio-styles.css"/>
   </head>
   <body>
     <header class="header">
@@ -40,7 +42,9 @@
             <strong>Front-end</strong><br/>apasionado por el<br/>aprendizaje
             <strong> eterno.</strong>
           </h1>
-          <img class="hero-image" src="images/portfolio-images/portada.jpg" alt="foto de portada" width="548"/>
+          <figure class="cover-page">
+            <img class="hero-image" src="images/portfolio-images/portada.jpg" alt="foto de portada" width="548"/>
+          </figure>
       </div>
     </section>
     <section class="portfolio" id="portafolio">
@@ -57,10 +61,10 @@
             CSS Grid, y el Responsive Design.</p>
           </div>
           <figure class="project-image-container">
-            <img class="project-image" src="images/theater-images/proyectoTheater.png" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
+            <img class="project-image theater" src="images/theater-images/proyectoTheater.png" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
           </figure>
         </article>
-        <article class="project">
+        <article class="project instagram">
           <div class="project-details">
           <h3 class="project-title">Instagram (layout)</h3>
           <h6 class="project-course">Html / CSS</h6>
@@ -84,10 +88,10 @@
           </p>
           </div>
           <figure class="project-image-container">
-            <img class="project-image" src="images/pinterest-images/pinterest-page.jpg" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
+            <img class="project-image pinterest" src="images/pinterest-images/pinterest-page.jpg" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
           </figure>
         </article>
-        <article class="project">
+        <article class="project peso">
           <div class="project-details">
           <h3 class="project-title">El peso en otros lugares</h3>
           <h6 class="project-course">Html / Js / CSS</h6>
@@ -109,7 +113,7 @@
       pegado al margen. Esto porque el título queda fuera de la
       clase "event-list", en el cual están toda la información 
       dividida correctamente. --> </section>
-    <div class="container">
+    <div class="container sub-title">
       <h2 class="event-list-title">Más sobre mi experiencia</h2>
     </div>
     <section class="event-list">
@@ -168,16 +172,17 @@
         <h2>Certificados (Actualizados)</h2>
       </section>
       <div class="diplomas">
-          <figure class="certificates-image">
+          <figure class="certificates-image devfest">
             <img src="images/portfolio-images/certificates/devfest-2018.jpg" alt="devfest-2018"/>
           </figure>
-          <figure class="certificates-image">
+          <!-- <figure class="certificates-image">
             <img src="images/portfolio-images/certificates/github.jpg" alt="github.jpg"/>
-          </figure>
-          <figure class="certificates-image">
+          </figure>-->
+          <figure class="certificates-image web">
             <img src="images/portfolio-images/certificates/desarrollo-web-online.jpg" alt="desarrollo-web-online.jpg"/>
           </figure>
-          <figure class="certificates-image">
+          <!-- 
+            <figure class="certificates-image">
             <img src="images/portfolio-images/certificates/inteligencia-artificial-ibm-watson.jpg" alt="inteligencia-artificial-ibm-watson.jpg"/>
           </figure>
           <figure class="certificates-image">
@@ -189,6 +194,7 @@
           <figure class="certificates-image">
             <img src="images/portfolio-images/certificates/programacion-basica.jpg" alt="programacion-basica"/>
           </figure>
+          -->
       </div>
     </section>
     <section class="contact" id="contacto">
@@ -213,7 +219,7 @@
           <p>Curso de desarrollo web online 2018 <img src="images/portfolio-images/platzi.png" width="50" alt="platzi"></p>
         </div>
         <div>
-          <p>Based on <a href= "https://twitter.com/thespianartist" target="_blank">@terspieanartist</a>'s design</p>
+          <p>Based on <a href= "https://twitter.com/thespianartist" target="_blank">@terspieanartist</a>'s design by Percy Meneses Luyo</p>
         </div>
       </div>
     </footer>

@@ -14,7 +14,7 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.6em;
   line-height: 1.5em;
   letter-spacing: -.2px;
   color: white;
@@ -52,7 +52,6 @@ h2 {
 
 .portfolio {
   background: #fafafa;
-  padding: 20px;
 }
 
 .project {
@@ -65,6 +64,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 0px 5px #bebebe;
+  width: 57vw;
 }
 
 .project-course,
@@ -185,7 +185,7 @@ figure {
 
 .event {
   margin: 10px;
-  width: 480px;
+  width: 540px;
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
@@ -229,8 +229,6 @@ figure {
   border-radius: 5px;
 }
 
-/* Esto es para que la sección con nombre de clase "certificates" esté 
-centrada con un ancho máximo de 1000 pixeles con un margen automático */
 .certificates {
   /* background: #dcdde1; */
   background: #fafafa;
@@ -243,19 +241,26 @@ centrada con un ancho máximo de 1000 pixeles con un margen automático */
   padding-bottom: 0px;
 }
 
+.certificates-image.devfest,
+.certificates-image.web {
+  width: 460px;
+  margin: 0 55px;
+}
+
 .diplomas {
   /* este width y margin no van en la clase certificates porque 
   sino haríamos que el color de fondo también esté centrado */
-  width: 1000px;
+  width: 100vw;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .certificates-image img {
-  height: 342px;
   margin-bottom: 27px;
+  width: 100%;
 }
 
 .contact {
@@ -323,11 +328,171 @@ centrada con un ancho máximo de 1000 pixeles con un margen automático */
 }
 
 .container {
-  width: 1000px;
+  padding: 0 20vw;
+  width: 100vw;
   margin: 0 auto;
   display: inherit;
   height: inherit;
   align-items: inherit;
   justify-content: inherit;
   flex-wrap: inherit;
+}
+
+@media screen and (max-width: 1919px) {
+  .container {
+    padding: 0 10vw;
+  }
+  .project {
+    width: 75vw;
+  }
+  .event {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .container {
+    padding: 0 2vw;
+  }
+  .project {
+    width: 91vw;
+  }
+  .event {
+    width: 470px;
+  }
+  .certificates-image.certificates-image.devfest,
+  .certificates-image.web {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .menu {
+    display: none;
+  }
+  .cover-page {
+    width: 360px;
+  }
+  .cover-page img {
+    content: url("../images/portfolio-images/portada-mobile.jpg");
+    width: 100%;
+  }
+  .project {
+    justify-content: space-around;
+  }
+  .project.instagram,
+  .project.peso {
+    display: none;
+  }
+  .project-image-container {
+    width: 200px;
+  }
+  .project-image.theater {
+    content: url("../images/theater-images/proyectoTheater-mobile.png");
+    width: 100%;
+  }
+  .project-image.pinterest {
+    content: url("../images/pinterest-images/proyectoPinterest-mobile.png");
+    width: 100%;
+  }
+  .project-details {
+    width: 300px;
+  }
+  .certificates-image {
+    width: 270px !important;
+  }
+  .event {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .container {
+    justify-content: center;
+  }
+  .container h1 {
+    font-size: 1.43em;
+  }
+  .cover-page {
+    width: 140px;
+  }
+  .hero {
+    height: 50vw;
+  }
+  .container.certificates-title {
+    margin: 0;
+    padding-left: 0;
+    justify-content: center;
+  }
+  .event {
+    margin: 10px 0;
+    width: 96vw !important;
+  }
+  .portfolio {
+    margin-left: 1.2vw;
+  }
+  .portfolio .container {
+    padding: 0;
+  }
+    .project {
+      justify-content: space-around;
+      width: 86vw;
+    }
+    .project-description {
+      font-size: 15px;
+    }
+    .project.instagram,
+    .project.peso {
+      display: none;
+    }
+    .project-image-container {
+      width: 200px;
+    }
+    .project-details {
+      width: 300px;
+    }
+  .container.sub-title {
+    padding: 0;
+   }
+  .container.container.sub-title h2 {
+    margin-bottom: 10px;;
+  }
+    .event-list-title {
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+    }
+  .certificates-image.certificates-image.devfest,
+  .certificates-image.web {
+    width: 400px !important;
+    margin: 0;
+  }
+    .event {
+      width: 365px;
+    }
+  .contact {
+    display: grid;
+    justify-content: center;
+    height: 240px;
+  }
+    .form-email h3 {
+      margin-top: 20px;
+      display: grid;
+      justify-content: center;
+    }
+    .form-email h3,
+    button {
+      justify-self: center;
+    }
+  .form-email {
+    display: grid;
+  }
+    .social {
+      margin: 10px 0;
+    }
+    .footer {
+      display: grid;
+      justify-content: center;
+    }
+  .footer .container div {
+    justify-self: center;
+  }
+  
 }
