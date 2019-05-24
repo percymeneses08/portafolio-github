@@ -249,9 +249,8 @@ figure {
 }
 
 .diplomas {
-  /* este width y margin no van en la clase certificates porque 
+  /* este margin no van en la clase certificates porque 
   sino haríamos que el color de fondo también esté centrado */
-  width: 100vw;
   margin: 0 auto;
   display: flex;
   /* justify-content: space-between; */
@@ -328,15 +327,27 @@ figure {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.developer {
+  margin-top: 0;
+}
+
 .container {
+  /* width: 100vw; */
   padding: 0 20vw;
-  width: 100vw;
-  margin: 0 auto;
   display: inherit;
   height: inherit;
   align-items: inherit;
   justify-content: inherit;
   flex-wrap: inherit;
+}
+.container.width {
+  width: 100vw;
+}
+.container.foot {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 20px;
 }
 .footer .container strong {
   color: red;
@@ -369,6 +380,9 @@ figure {
   }
 }
 @media screen and (max-width: 1023px) {
+  .header .container {
+    justify-content: center;
+  }
   .menu {
     display: none;
   }
@@ -386,6 +400,49 @@ figure {
     display: none;
   }
   .project-image-container {
+    width: 600px;
+    margin-left: 10px;
+  }
+  .project-image.platzi-video {
+    content: url("../images/platzi-video-images/proyectoPlatziVideo-tablet.png");
+    width: 100%;
+  }
+  .project-image.theater {
+    content: url("../images/theater-images/proyectoTheater-tablet.png");
+    width: 100%;
+  }
+  .project.pinterest {
+    display: none;
+  }
+  .project-details {
+    width: 300px;
+  }
+  .certificates-image {
+    width: 270px !important;
+  }
+  .event {
+    width: 340px;
+  }
+  .container.foot {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container h1 {
+    font-size: 1.43em;
+  }
+  .cover-page {
+    width: 140px;
+  }
+  .hero {
+    height: 50vw;
+  }
+  .container.certificates-title {
+    margin: 0;
+    padding-left: 0;
+    justify-content: center;
+  }
+  .project-image-container {
     width: 200px;
   }
   .project-image.platzi-video {
@@ -400,33 +457,8 @@ figure {
     content: url("../images/pinterest-images/proyectoPinterest-mobile.png");
     width: 100%;
   }
-  .project-details {
-    width: 300px;
-  }
-  .certificates-image {
-    width: 270px !important;
-  }
-  .event {
-    width: 340px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header .container {
-    justify-content: center;
-  }
-  .container h1 {
-    font-size: 1.43em;
-  }
-  .cover-page {
-    width: 140px;
-  }
-  .hero {
-    height: 50vw;
-  }
-  .container.certificates-title {
-    margin: 0;
-    padding-left: 0;
-    justify-content: center;
+  .project.pinterest {
+    display: grid;
   }
   .event {
     margin: 10px 0;
@@ -452,6 +484,7 @@ figure {
     }
   .project-image-container {
     width: 300px;
+    margin-left: 0;
   }
     .project-details {
       width: 300px;
@@ -503,4 +536,9 @@ figure {
     justify-self: center;
   }
   
+}
+@media screen and (max-width: 320px) {
+  .hero {
+    height: 70vw;
+  }
 }
