@@ -346,7 +346,7 @@ figure {
 }
 
 .container {
-  width: 100vw;
+  /* width: 100%; */
   padding: 0 20vw;
   display: inherit;
   height: inherit;
@@ -355,7 +355,7 @@ figure {
   flex-wrap: inherit;
 }
 .container.width {
-  width: 100vw;
+  width: 100%;
 }
 .container.foot {
   display: grid;
