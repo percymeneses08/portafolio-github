@@ -101,6 +101,9 @@ h2 {
 .project-image-container {
   width: 500px;
 }
+.project-image {
+  cursor: pointer;
+}
 
 .header {
   background-color: #44bd32;
@@ -180,10 +183,6 @@ figure {
   flex-wrap: wrap;
 }
 
-.event-list-title {
-  margin-left: 20px;
-}
-
 .event {
   margin: 10px;
   width: 540px;
@@ -238,7 +237,6 @@ figure {
 .container.certificates-title {
   display: flex;
   margin-top: 20px;
-  padding-top: 20px;
   padding-bottom: 0px;
 }
 
@@ -246,6 +244,9 @@ figure {
 .certificates-image.web {
   width: 460px;
   margin: 0 55px;
+}
+.certificates-image.web {
+  width: 420px;
 }
 
 .diplomas {
@@ -257,10 +258,23 @@ figure {
   flex-wrap: wrap;
   justify-content: center;
 }
+.diplomas-section {
+  display: grid;
+  margin-bottom: 24px;
+}
 
 .certificates-image img {
   margin-bottom: 27px;
   width: 100%;
+}
+.event-url.certificates {
+  font-size: 20px;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 193px;
+  height: 33px;
 }
 
 .contact {
@@ -332,12 +346,12 @@ figure {
 }
 
 .container {
-  /* width: 100vw; */
+  width: 100vw;
   padding: 0 20vw;
   display: inherit;
   height: inherit;
   align-items: inherit;
-  justify-content: inherit;
+  justify-content: space-between;
   flex-wrap: inherit;
 }
 .container.width {
@@ -349,8 +363,17 @@ figure {
   justify-items: center;
   margin-bottom: 20px;
 }
+.container h2 {
+  margin-top: 0;
+  padding-top: 23px;
+  margin-bottom: 20px;
+}
 .footer .container strong {
   color: red;
+}
+.bottom-menu {
+  display: none;
+  color: #5f6368;
 }
 
 @media screen and (max-width: 1919px) {
@@ -425,6 +448,47 @@ figure {
   }
   .container.foot {
     margin-bottom: 100px;
+  }
+  .bottom-menu {
+    background-color: white;
+    box-shadow: 0 -1px 6px 0 rgba(32,33,36,0.28);
+    display: grid;
+    position: fixed;
+    bottom: 0;
+  }
+  .bottom-menu ol{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-areas: "project-link certificate-link event-link contact-link";
+    padding: 10px 0;
+  }
+  .bottom-menu span {
+    font-size: 30px;
+  }
+  .bottom-menu p {
+    margin: 0;
+    font-size: 15px;
+  }
+  .project-link {
+    grid-area: project-link;
+  }
+  .certificate-link {
+    grid-area: certificate-link;
+  }
+  .event-link {
+    grid-area: event-link;
+  }
+  .contact.link {
+    grid-area: contact-link;
+  }
+
+  .project-link,
+  .certificate-link,
+  .event-link,
+  .contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {

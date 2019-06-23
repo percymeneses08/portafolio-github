@@ -70,9 +70,19 @@ body {
   transform: scaleX(-1);
 }
 
+@media screen and (min-width: 1920px) {
+  .post-list {
+    grid-template-columns: repeat(3, minmax(400px, 293px));
+  }
+}
 @media screen and (max-width: 768px) {
   .post-list {
     grid-gap: 3px;
     grid-template-columns: repeat(2, minmax(100px, 293px));
+  }
+}
+@media screen and (max-width: 767px) {
+  .post-list {
+    grid-template-columns: repeat(1, minmax(400px, 293px));
   }
 }

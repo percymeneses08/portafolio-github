@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Percy Meneses Luyo</title>
     <link rel="icon" type="image/png" href="images/portfolio-images/favicon.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="css/portfolio-styles.css"/>
   </head>
@@ -49,7 +50,7 @@
     </section>
     <section class="portfolio" id="portafolio">
       <div class="container">
-        <h2>Portafolio (Proyectos Destacados)</h2>
+        <h2>Proyectos (Destacados)</h2>
         <article class="project platzi-video">
           <div class="project-details">
           <h3 class="project-title">PlatziVideo</h3>
@@ -112,10 +113,10 @@
           <p class="project-url"><small><strong>Míralo clickeando en el siguiente enlace:</strong> Arreglando errores. Disponible muy pronto</small></p>
           <p class="project-description">Esta página fue el resultado de un mes de arduo trabajo 
             grupal, para luego presentarlo en la feria de ciencias de la I.E.E."Alfonso Ugarte". 
-            Logrando así conseguir el primer puesto de nuestra categoría.</p>
+            Logrando así conseguir el primer puesto en nuestra categoría.</p>
           </div>
           <figure class="project-image-container">
-            <img class="project-image" src="images/portfolio-images/proyectoCTA.png" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
+            <img class="project-image peso" src="images/portfolio-images/proyectoCTA.png" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
           </figure>
         </article>
       </div>
@@ -184,7 +185,8 @@
       <section class="container certificates-title">
         <h2>Certificados (destacados)</h2>
       </section>
-      <div class="diplomas">
+      <div class="diplomas-section">
+        <div class="diplomas">
           <figure class="certificates-image devfest">
             <img src="images/portfolio-images/certificates/devfest-2018.jpg" alt="devfest-2018"/>
           </figure>
@@ -194,6 +196,7 @@
           <figure class="certificates-image web">
             <img src="images/portfolio-images/certificates/desarrollo-web-online.jpg" alt="desarrollo-web-online.jpg"/>
           </figure>
+        </div>
           <!-- 
             <figure class="certificates-image">
             <img src="images/portfolio-images/certificates/inteligencia-artificial-ibm-watson.jpg" alt="inteligencia-artificial-ibm-watson.jpg"/>
@@ -208,6 +211,7 @@
             <img src="images/portfolio-images/certificates/programacion-basica.jpg" alt="programacion-basica"/>
           </figure>
           -->
+        <a class="event-url certificates" href="html/portfolio-certificates-index.html" target="_blank">Ver más certificados</a>
       </div>
     </section>
     <section class="contact" id="contacto">
@@ -237,21 +241,34 @@
         <div>2018</div>
       </div>
     </footer>
-    <!-- <div class="fixed">
+    <div class="bottom-menu">
       <ol>
-        <li>
-          <a class="link" href="#portafolio">Portafolio</a>
+        <li class="project-link">
+          <span>
+            <i class="fas fa-laptop-code"></i>
+          </span>
+          <p>Proyectos</p>
         </li>
-        <li>
-          <a class="link" href="#eventos">Experiencia</a>
+        <li class="event-link">
+          <span>
+            <i class="far fa-calendar-alt"></i>
+          </span>
+          <p>Eventos</p>
         </li>
-        <li>
-          <a class="link" href="#certificados">Certificados</a>
+        <li class="certificate-link">
+          <span>
+            <i class="fas fa-scroll"></i>
+          </span>
+          <p>Certificados</p>
         </li>
-        <li>
-          <a class="link contact-me" href="#contacto">Contáctame</a>
+        <li class="contact-link">
+          <span>
+            <i class="far fa-address-book"></i>
+          </span>
+          <p>Contáctame</p>
         </li>
       </ol>
-    </div> -->
+    </div>
+    <script type="text/javascript" src="js/portfolio.js"></script>
   </body>
 </html>

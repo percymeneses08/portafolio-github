@@ -4,7 +4,6 @@ const menu = document.querySelector('.lists');
 const header = document.querySelector('.header');
 const videoTitle = document.querySelector('.video-title');
 const more = document.querySelector('.more');
-
 const burgerButton = document.querySelector('#burger-menu');
 
 ipad.addListener(Validation);
