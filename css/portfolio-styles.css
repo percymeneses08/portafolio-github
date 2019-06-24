@@ -50,9 +50,15 @@ h2 {
   object-fit: cover;
 }
 
+.container.portfolio {
+  display: grid;
+  justify-content: center;
+  margin: 0;
+}
 .portfolio {
   background: #fafafa;
   padding-bottom: 20px;
+  margin: 0;
 }
 
 .project {
@@ -540,9 +546,6 @@ figure {
   .event {
     margin: 10px 0;
     width: 96vw !important;
-  }
-  .portfolio {
-    margin-left: 1.2vw;
   }
   .portfolio .container {
     padding: 0;
