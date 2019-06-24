@@ -420,7 +420,7 @@ figure {
     content: url("../images/portfolio-images/portada-mobile.jpg");
     width: 100%;
   }
-  .project-title {
+  .project-tit {
     display: flex;
     justify-content: center;
   }
