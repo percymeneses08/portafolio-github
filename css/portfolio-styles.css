@@ -178,6 +178,9 @@ figure {
   color: white;
 }
 
+.container.eve {
+  width: 100%;
+}
 .event-list {
   display: flex;
   flex-wrap: wrap;
@@ -346,6 +349,7 @@ figure {
 }
 
 .container {
+  /* Nunca activar esto de abajo que trae problemas con el width en la versión de escritorio */
   /* width: 100%; */
   padding: 0 20vw;
   display: inherit;
@@ -416,6 +420,10 @@ figure {
     content: url("../images/portfolio-images/portada-mobile.jpg");
     width: 100%;
   }
+  .project-title {
+    display: flex;
+    justify-content: center;
+  }
   .project {
     justify-content: space-around;
   }
@@ -446,8 +454,18 @@ figure {
   .event {
     width: 340px;
   }
+  .event-list-title {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
   .container.foot {
     margin-bottom: 100px;
+  }
+  .container.certificates-title {
+    margin: 0;
+    padding-left: 0;
+    justify-content: center;
   }
   .bottom-menu {
     background-color: white;
@@ -501,11 +519,6 @@ figure {
   .hero {
     height: 50vw;
   }
-  .container.certificates-title {
-    margin: 0;
-    padding-left: 0;
-    justify-content: center;
-  }
   .project-image-container {
     width: 200px;
   }
@@ -536,7 +549,7 @@ figure {
   }
   .project {
     justify-content: space-around;
-    width: 86vw;
+    width: 88vw;
     display: grid;
   }
     .project-description {
@@ -559,11 +572,6 @@ figure {
   .container.container.sub-title h2 {
     margin-bottom: 10px;;
   }
-    .event-list-title {
-      display: flex;
-      justify-content: center;
-      margin-left: 0;
-    }
   .certificates-image.certificates-image.devfest,
   .certificates-image.web {
     width: 400px !important;
