@@ -81,7 +81,7 @@ h2 {
 }
 .portfolio a {
   text-decoration: none;
-  color: black;
+  color: #273c75;
 }
 
 .project-description {
@@ -126,7 +126,7 @@ ul {
   margin: 0;
   padding: 0;
   /* esto de abajo es para borrar los números */
-  list-style:none;
+  list-style: none;
 }
 
 figure {
@@ -257,6 +257,15 @@ figure {
 .certificates-image.web {
   width: 420px;
 }
+.certificates h2 {
+  margin: 5px 0;
+}
+.certificates div {
+  padding: 0 40px;
+}
+.certificates ul {
+  list-style: unset;
+}
 
 .diplomas {
   /* este margin no van en la clase certificates porque 
@@ -324,8 +333,7 @@ figure {
 }
 
 .form-email input{
-  border-color: gray;
-  border-style: solid;
+  border: 0;
   border-radius: 5px;
   padding: 5px 20px 5px 25px;
   background-image: url('../images/portfolio-images/envelope.svg');
@@ -344,6 +352,7 @@ figure {
   border-radius: 5px;
   width: 100px;
   margin-top: 10px;
+  border: 2px solid white;
 }
 
 .form-email h3 {
@@ -440,6 +449,10 @@ figure {
     width: 600px;
     margin-left: 10px;
   }
+  .project-image.compra-facil{
+    content: url("../images/compra-facil-images/proyecto-compra-facil-tablet.png");
+    width: 100%;
+  }
   .project-image.platzi-video {
     content: url("../images/platzi-video-images/proyectoPlatziVideo-tablet.png");
     width: 100%;
@@ -483,7 +496,7 @@ figure {
   .bottom-menu ol{
     display: grid;
     grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-areas: "project-link certificate-link event-link contact-link";
+    grid-template-areas: "project-link event-link certificate-link contact-link";
     padding: 10px 0;
   }
   .bottom-menu span {
@@ -527,6 +540,10 @@ figure {
   }
   .project-image-container {
     width: 200px;
+  }
+  .project-image.compra-facil {
+    content: url("../images/compra-facil-images/proyecto-compra-facil-mobile.png");
+    width: 100%;
   }
   .project-image.platzi-video {
     content: url("../images/platzi-video-images/proyectoPlatziVideo-mobile.png");

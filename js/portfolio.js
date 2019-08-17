@@ -5,6 +5,7 @@ const events = document.querySelector('.event-link');
 const certificate = document.querySelector('.certificate-link');
 const contact = document.querySelector('.contact-link');
 
+const compraFacil = document.querySelector('.project-image.compra-facil');
 const platziVideo = document.querySelector('.project-image.platzi-video');
 const theater = document.querySelector('.project-image.theater');
 const pinterest = document.querySelector('.project-image.pinterest');
@@ -31,10 +32,15 @@ function Validation(event)
 }
 Validation(ipad);
 
+compraFacil.addEventListener('click', OpenCompraFacil);
 platziVideo.addEventListener('click', OpenPlatziVideo);
 theater.addEventListener('click', OpenTheater);
 pinterest.addEventListener('click', OpenPinterest);
 peso.addEventListener('click', OpenPeso);
+// platziVideo.addEventListener('click', OpenPlatziVideo);
+// theater.addEventListener('click', OpenTheater);
+// pinterest.addEventListener('click', OpenPinterest);
+// peso.addEventListener('click', OpenPeso);
 
 function ProjectPosition()
 {
@@ -53,13 +59,17 @@ function ContactPosition()
   window.location.href = "#contacto";
 }
 
+function OpenCompraFacil()
+{
+  window.location.href = "https://percymeneses08.github.io/CompraFacil/";
+}
 function OpenPlatziVideo()
 {
-  window.location.href = "html/platzi-video-index.html";
+  window.location.href = "https://percymeneses08.github.io/PlatziVideo/";
 }
 function OpenTheater()
 {
-  window.location.href = "html/theater-index.html";
+  window.location.href = "https://percymeneses08.github.io/Movie.es/";
 }
 function OpenPinterest()
 {
