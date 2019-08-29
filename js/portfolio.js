@@ -35,7 +35,7 @@ Validation(ipad);
 compraFacil.addEventListener('click', OpenCompraFacil);
 platziVideo.addEventListener('click', OpenPlatziVideo);
 theater.addEventListener('click', OpenTheater);
-pinterest.addEventListener('click', OpenPinterest);
+// pinterest.addEventListener('click', OpenPinterest);
 peso.addEventListener('click', OpenPeso);
 // platziVideo.addEventListener('click', OpenPlatziVideo);
 // theater.addEventListener('click', OpenTheater);
@@ -71,10 +71,10 @@ function OpenTheater()
 {
   window.location.href = "https://percymeneses08.github.io/Movie.es/";
 }
-function OpenPinterest()
+/* function OpenPinterest()
 {
   window.location.href = "html/pinterest-index.html";
-}
+} */
 function OpenPeso()
 {
   window.location.href = "html/construccion-index.html";
