@@ -375,6 +375,7 @@ figure {
 }
 .container.width {
   width: 100%;
+  justify-content: center;
 }
 .container.foot {
   display: grid;
@@ -540,6 +541,9 @@ figure {
   }
   .project-image-container {
     width: 200px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
   }
   .project-image.compra-facil {
     content: url("../images/compra-facil-images/proyecto-compra-facil-mobile.png");

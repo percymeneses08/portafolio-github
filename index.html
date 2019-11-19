@@ -27,7 +27,7 @@
             <a class="link" href="#eventos">Experiencia</a>
           </li>
           <li>
-            <a class="link" href="#certificados">Certificados</a>
+            <a class="link" href="#certificados">Skills</a>
           </li>
           <li>
             <a class="link contact-me" href="#contacto">Contáctame</a>
@@ -50,7 +50,22 @@
     </section>
     <section class="portfolio" id="portafolio">
       <div class="container portfolio">
-        <h2 class="project-tit">Proyectos (Destacados)</h2>
+        <h2 class="project-title">Proyectos (Destacados)</h2>
+        <article class="project Invie">
+          <div class="project-details">
+          <h3 class="project-title">Guitarras Invie</h3>
+          <h6 class="project-course">HTML / CSS / JS / ReactJs / React Redux</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 14/11/19</small></p>
+          <p class="project-url"><small><strong>Puedes verlo en: </strong><a href="https://percymeneses08.github.io/invie/">https://percymeneses08.github.io/invie/</a></small></p>
+          <p class="project-description">
+            Este proyecto fue para demostrar mis habilidades adquiridas en animaciones y transiciones en CSS, ya sea usando Javascript o puro. Todo eso lo junté en un proyecto
+            de ReactJs en el cual tienes que escribir la palabra 'invie' para que funcionen las animaciones y transiciones, y luego 'goback' para que regrese a su estado normal.
+          </p>
+          </div>
+          <figure class="project-image-container">
+            <img class="project-image invie" src="images/invie-images/invie-desktop.png" width="475" alt="captura de pantalla del proyecto en equipo"/>
+          </figure>
+        </article>
         <article class="project compraFacil">
           <div class="project-details">
           <h3 class="project-title">Compra Fácil</h3>
@@ -95,34 +110,7 @@
             <img class="project-image theater" src="images/theater-images/proyectoTheater.png" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
           </figure>
         </article>
-        <!-- <article class="project instagram">
-          <div class="project-details">
-          <h3 class="project-title">Instagram (layout)</h3>
-          <h6 class="project-course">Html / CSS</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 01/15/19</small></p>
-          <p class="project-url"><small><strong>Puedes verlo en: </strong><a href="html/instagram-index.html">www.percymeneses08.com/instagram-index.html</a></small></p>
-          <p class="project-description">Realicé este proyecto para plasmar mis conocimientos adquiridos en CSS Grid y aprender sobre Responsive Design. 
-            Lo más complicado fue entender la sintaxis para aplicar este último en el proyecto. Sin embargo, una vez lo entiendes, luego se te vuelve más fácil.</p>
-          </div>
-          <figure class="project-image-container">
-            <img class="project-image" src="images/instagram-images/instagram-page.jpg" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
-          </figure>
-        </article> -->
-        <!-- <article class="project pinterest">
-          <div class="project-details">
-          <h3 class="project-title">Pinterest (layout)</h3>
-          <h6 class="project-course">Html / CSS</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 01/23/19</small></p>
-          <p class="project-url"><small><strong>Míralo clickeando en el siguiente enlace: </strong><a href="html/pinterest-index.html">www.percymeneses08.com/html/pinterest-index.html</a></small></p>
-          <p class="project-description">Este proyecto fue para llevar al siguiente nivel mis conocimientos adquiridos sobre CSS Grid.
-            Me costó mucho trabajo hacer que se vean ordenadas las imágenes pues, estas no tenían el mismo tamaño entre ellas como en el proyecto de Instagram.
-          </p>
-          </div>
-          <figure class="project-image-container">
-            <img class="project-image pinterest" src="images/pinterest-images/pinterest-page.jpg" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
-          </figure>
-        </article> -->
-        <article class="project peso">
+        <!-- <article class="project peso">
           <div class="project-details">
           <h3 class="project-title">El peso en otros lugares</h3>
           <h6 class="project-course">Html / Js / CSS</h6>
@@ -135,20 +123,28 @@
           <figure class="project-image-container">
             <img class="project-image peso" src="images/portfolio-images/proyectoCTA.png" width="475" alt="captura de pantalla de mi proyecto de CTA"/>
           </figure>
-        </article>
+        </article> -->
       </div>
     </section>
-    <section id="eventos"> <!-- Esta sección se ha creado 
-      para que al hacer click en la sección experiencia, nos pueda 
-      llevar a dicha sección pero sin que el título quede demasiado
-      pegado al margen. Esto porque el título queda fuera de la
-      clase "event-list", en el cual están toda la información 
-      dividida correctamente. --> </section>
+    <section id="eventos"> 
+    </section>
     <div class="container sub-title">
       <h2 class="event-list-title">Eventos (destacados)</h2>
     </div>
     <section class="event-list">
       <div class="container eve">
+        <article class="event">
+          <figure class="event-image-container">
+            <img class="event-image" src="images/portfolio-images/wawalaptop.jpg" width="500" alt="foto en el colegio Telésforo Catacora"/>
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Desarrollo Web - Taller</h3>
+            <p class="event-description">Este fue un taller dividido en 6 sesiones. El cual tuvo como objetivo enseñar a todos los 
+              alumnos, de 5to de secundaria del colegio Telésforo Catacora, a desarrollar una web desde cero con HTML, CSS y Javascript.
+            </p>
+            <!-- <a class="event-url" href="https://github.com/percymeneses08" target="blank">Ver proyecto</a> -->
+          </div>
+        </article>
         <article class="event">
           <figure class="event-image-container">
             <img class="event-image" src="images/portfolio-images/github-hackspace.jpg" width="500" alt="foto de la i/o extended 2018"/>
@@ -170,18 +166,7 @@
             <p class="event-description">A menudo trato de asistir a diferentes eventos que van realizando las comunidades de tecnología como 
               LimaJS, GDG Lima, VueJS y Flutter Perú.
             </p>
-            <a class="event-url" href="https://www.facebook.com/limafrontend/" target="blank">Visitar facebook</a>
-          </div>
-        </article>
-        <article class="event">
-          <figure class="event-image-container">
-            <img src="images/portfolio-images/io-extended.jpg" alt="foto de la i/o extended 2018"/>
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">Google I/O Extended 2018</h3>
-            <p class="event-description">El evento I/O Extended ayuda a los desarrolladores que se 
-              encuentran alrededor del mundo a formar parte de la experiencia I/O.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=PXyH0X_YLo0" target="_blank">Años anteriores</a>
+            <a class="event-url" href="https://www.facebook.com/limafrontend/" target="blank">Quiero unirme</a>
           </div>
         </article>
         <article class="event">
@@ -221,44 +206,24 @@
         <h2>Skills</h2>
         <div>
           <ul>
-            <li>
-              <p>HTML</p>
-            </li>
-            <li>
-              <p>CSS</p>
-            </li>
-            <li>
-              <p>CSS Flexbox</p>
-            </li>
-            <li>
-              <p>CSS Grid Layout</p>
-            </li>
-            <li>
-              <p>Responsive Design</p>
-            </li>
-            <li>
-              <p>JS</p>
-            </li>
-            <li>
-              <p>Firebase</p>
-            </li>
-            <li>
-              <p>Git y GitHub</p>
-            </li>
-            <li>
-              <p>Inglés (Intermedio)</p>
-            </li>
+            <li><p>HTML</p></li>
+            <li><p>CSS</p></li>
+            <li><p>CSS Flexbox</p></li>
+            <li><p>CSS Grid Layout</p></li>
+            <li><p>Responsive Design</p></li>
+            <li><p>JS</p></li>
+            <li><p>ReactJs</p></li>
+            <li><p>React Router</p></li>
+            <li><p>React Redux</p></li>
+            <li><p>Firebase</p></li>
+            <li><p>Git y GitHub</p></li>
+            <li><p>Inglés (Intermedio)</p></li>
           </ul>
         </div>
       </section>
     </section>
     <section class="contact" id="contacto">
       <div class="container width">
-          <form action="/suscripcion/" class="form-email">
-            <h3>Contáctame</h3>
-            <input type="text" placeholder="Déjame tu email"/>
-            <button>Enviar</button>
-          </form>
           <div class="social">
             <a href="https://facebook.com/percymeneses08" class="social-link facebook"></a>
             <a href="https://instagram.com/percymeneses08" class="social-link instagram"></a>

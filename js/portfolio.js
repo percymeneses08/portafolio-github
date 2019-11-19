@@ -5,6 +5,7 @@ const events = document.querySelector('.event-link');
 const certificate = document.querySelector('.certificate-link');
 const contact = document.querySelector('.contact-link');
 
+const invie = document.querySelector('.project-image.invie');
 const compraFacil = document.querySelector('.project-image.compra-facil');
 const platziVideo = document.querySelector('.project-image.platzi-video');
 const theater = document.querySelector('.project-image.theater');
@@ -32,6 +33,7 @@ function Validation(event)
 }
 Validation(ipad);
 
+invie.addEventListener('click', OpenInvie);
 compraFacil.addEventListener('click', OpenCompraFacil);
 platziVideo.addEventListener('click', OpenPlatziVideo);
 theater.addEventListener('click', OpenTheater);
@@ -59,6 +61,9 @@ function ContactPosition()
   window.location.href = "#contacto";
 }
 
+function OpenInvie() {
+  window.location.href = "https://percymeneses08.github.io/invie/";
+}
 function OpenCompraFacil()
 {
   window.location.href = "https://percymeneses08.github.io/CompraFacil/";
