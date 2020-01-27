@@ -375,7 +375,7 @@ figure {
 }
 .container.width {
   width: 100%;
-  justify-content: center;
+/*   justify-content: center; */
 }
 .container.foot {
   display: grid;
