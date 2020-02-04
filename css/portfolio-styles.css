@@ -389,7 +389,10 @@ figure {
 }
 .container.width {
   width: 100%;
-/*   justify-content: center; */
+}
+.container.width.center {
+  width: 100%;
+  justify-content: center;
 }
 .container.foot {
   display: grid;
