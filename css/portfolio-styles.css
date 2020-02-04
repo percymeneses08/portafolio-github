@@ -204,15 +204,28 @@ figure {
 
 .event-image-container {
   width: inherit;
+
+  height:200px;
+  overflow: hidden;
 }
 
-.event img {
+.event-image {
   width: inherit;
-  height: 200px;
   /* esto de abajo es para que la imagen no quede deformada */
   object-fit: cover;
 }
-
+.event-image.first {
+  margin-top: -113px;
+}
+.event-image.second {
+  margin-top: -131px;
+}
+.event-image.third {
+  margin-top: -76px;
+}
+.event-image.fourth {
+  margin-top: -68px;
+}
 .event-detail {
   margin: 20px 40px;
   background: white;
