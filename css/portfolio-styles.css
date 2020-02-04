@@ -207,6 +207,7 @@ figure {
 
   height:200px;
   overflow: hidden;
+  display: flex;
 }
 
 .event-image {
@@ -215,16 +216,16 @@ figure {
   object-fit: cover;
 }
 .event-image.first {
-  margin-top: -113px;
+  object-position: bottom;
 }
 .event-image.second {
-  margin-top: -131px;
+  margin-top: -104px;
 }
 .event-image.third {
-  margin-top: -76px;
+  margin-top: -10px;
 }
 .event-image.fourth {
-  margin-top: -68px;
+  margin-top: -38px;
 }
 .event-detail {
   margin: 20px 40px;
