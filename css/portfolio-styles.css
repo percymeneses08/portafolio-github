@@ -467,6 +467,10 @@ figure {
     width: 600px;
     margin-left: 10px;
   }
+  .project-image.hackspace-badge {
+    content: url("../images/hackspace-badge/hackspaceBadge-tablet.png");
+    width: 100%;
+  }
   .project-image.compra-facil{
     content: url("../images/compra-facil-images/proyecto-compra-facil-tablet.png");
     width: 100%;
@@ -561,6 +565,10 @@ figure {
     overflow: hidden;
     justify-content: center;
     display: flex;
+  }
+  .project-image.hackspace-badge {
+    content: url("../images/hackspace-badge/hackspaceBadge-mobile.png");
+    width: 100%;
   }
   .project-image.compra-facil {
     content: url("../images/compra-facil-images/proyecto-compra-facil-mobile.png");

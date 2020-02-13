@@ -5,6 +5,7 @@ const events = document.querySelector('.event-link');
 const certificate = document.querySelector('.certificate-link');
 const contact = document.querySelector('.contact-link');
 
+const hackspaceBadge = document.querySelector('.project-image.hackspace-badge')
 const invie = document.querySelector('.project-image.invie');
 const compraFacil = document.querySelector('.project-image.compra-facil');
 const platziVideo = document.querySelector('.project-image.platzi-video');
@@ -33,6 +34,7 @@ function Validation(event)
 }
 Validation(ipad);
 
+hackspaceBadge.addEventListener('click', OpenHackspaceBadge)
 invie.addEventListener('click', OpenInvie);
 compraFacil.addEventListener('click', OpenCompraFacil);
 platziVideo.addEventListener('click', OpenPlatziVideo);
@@ -61,6 +63,9 @@ function ContactPosition()
   window.location.href = "#contacto";
 }
 
+function OpenHackspaceBadge () {
+  window.location.href = "https://github.com/percymeneses08/hackspace-files"
+}
 function OpenInvie() {
   window.location.href = "https://percymeneses08.github.io/invie/";
 }
