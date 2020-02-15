@@ -64,7 +64,7 @@ function ContactPosition()
 }
 
 function OpenHackspaceBadge () {
-  window.location.href = "https://github.com/percymeneses08/hackspace-files"
+  window.location.href = "https://percymeneses08.github.io/hackspace-badges-firebase/"
 }
 function OpenInvie() {
   window.location.href = "https://percymeneses08.github.io/invie/";
