@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR</title>
+  <style>
+    :root {
+      font-size: 1vw;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 99%;
+      align-items: center;
+      font-family: 'system-ui';
+      font-weight: 500;
+    }
+
+    .title {
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: 3rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* border: 1px solid #18a0fb; */
+      width: 43rem;
+      height: 10rem;
+    }
+
+    .button {
+      font-family: inherit;
+      font-weight: inherit;
+      border: 0;
+      background-color: #18A0FB;
+      color: black;
+      /* width: 17.5rem; */
+      /* height: 4.0625rem; */
+      padding: .5rem 2.3rem;
+      border-radius: 1.4rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 2.5rem;
+      align-self: flex-end;
+    }
+
+    .button:hover {
+      background-color: #108adb;
+    }
+
+    .button:active {
+      background-color: #48a7e6;
+    }
+
+    .image {
+      width: 7rem;
+      height: min-content;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="title">Welcome to the new MeetUp world</h1>
+  <div class="container">
+    <img class="image" src="../images/vr/virtual-reality.png" alt="virtual-reality" />
+    <a href="https://hub.link/SKzTdRx" target="_blank" class="button">Experiméntalo</a>
+    <img class="image" src="../images/vr/smiley.png" alt="smiley face" />
+  </div>
+</body>
+
+</html>
