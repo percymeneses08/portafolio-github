@@ -19,7 +19,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 99%;
+      /* height: 99%; */
       align-items: center;
       font-family: 'system-ui';
       font-weight: 500;
@@ -29,6 +29,8 @@
       font-family: inherit;
       font-weight: inherit;
       font-size: 3rem;
+      color: black;
+      text-decoration: none;
     }
 
     .container {
@@ -56,7 +58,6 @@
       align-items: center;
       text-decoration: none;
       font-size: 2.5rem;
-      align-self: flex-end;
     }
 
     .button:hover {
@@ -71,16 +72,99 @@
       width: 7rem;
       height: min-content;
     }
+
+    .container-rooms {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1300px;
+      width: 80%;
+      margin-top: 30px;
+    }
+
+    .room-container {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .room-image-figure {
+      display: flex;
+      width: 100%;
+      border-radius: 30px;
+      overflow: hidden;
+      margin: 0;
+      margin-bottom: 26px;
+    }
+
+    .room-image-figure > img {
+      width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+      }
+
+    @media screen and (max-width: 1024px) {
+      .room-container {
+        width: 100%;
+      }
+
+      .room-image-figure {
+        border-radius: 3vw;
+      }
+
+      .button {
+        font-size: 5rem;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <h1 class="title">Welcome to the new MeetUp world</h1>
+  <h1 class="title">Welcome to the Blockchain 3D room</h1>
   <div class="container">
     <img class="image" src="../images/vr/virtual-reality.png" alt="virtual-reality" />
-    <a href="https://hub.link/ucyFnJt" target="_blank" class="button">Experiméntalo</a>
-    <img class="image" src="../images/vr/smiley.png" alt="smiley face" />
+    <h2 href="https://hub.link/ucyFnJt" target="_blank" class="title">Enjoy your trip!</h2>
+    <img class="image" src="../images/vr/blockchain.png" alt="smiley face" />
   </div>
+
+  <div class="container-rooms">
+    <div class="room-container">
+      <figure class="room-image-figure">
+        <img src="../images/vr/room.JPG" alt="">
+      </figure>
+      <a class="button" href="https://hub.link/zybhgWx" target="_blank">Try it...!</a>
+    </div>
+    <div class="room-container">
+      <figure class="room-image-figure">
+        <img src="../images/vr/room.JPG" alt="">
+      </figure>
+      <a class="button" href="https://hub.link/s8Gmsox" target="_blank">Try it...!</a>
+    </div>
+    <div class="room-container">
+      <figure class="room-image-figure">
+        <img src="../images/vr/room.JPG" alt="">
+      </figure>
+      <a class="button" href="/">Try it...!</a>
+    </div>
+    <div class="room-container">
+      <figure class="room-image-figure">
+        <img src="../images/vr/room.JPG" alt="">
+      </figure>
+      <a class="button" href="/">Try it...!</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <h3 class="title">Environments made by</h3>
+    <a class="title" href="https://twitter.com/simonxpe" target="_blank">@simonxpe</a>
+  </footer>
 </body>
 
 </html>
