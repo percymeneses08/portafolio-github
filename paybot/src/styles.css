@@ -1,0 +1,39 @@
+:root {
+  font-size: 16px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  max-width: 900px;
+}
+.hero_title {
+  font-weight: 600;
+  font-size: 4rem;
+  margin: 0;
+  color: #222222;
+}
+.hero_description {
+  color: #565656;
+  line-height: 1.4em;
+  margin-bottom: 2.1em;
+}
+.main-image-figure {
+  overflow: hidden;
+  border-radius: 18px;
+}
+.main-image-figure img {
+  width: 100%;
+}
+.whatsapp-button {
+  font-size: 1rem;
+  background-color: rgb(87, 219, 126);
+  color: white;
+  text-decoration: none;
+  padding: .5em 1em;
+  border-radius: .4em;
+}
