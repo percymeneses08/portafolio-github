@@ -1,15 +1,17 @@
 :root {
-  font-size: 16px;
+  font-size: 0.9vw;
 }
 body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .hero {
   display: flex;
   max-width: 900px;
+  margin-top: 2em;
 }
 .hero_title {
   font-weight: 600;
@@ -25,9 +27,19 @@ body {
 .main-image-figure {
   overflow: hidden;
   border-radius: 18px;
+  margin: 0;
+  width: 18em;
 }
 .main-image-figure img {
   width: 100%;
+}
+
+.bot-whatsapp {
+  display: flex;
+  flex-direction: column;
+}
+.whatsapp-qr {
+  width: 10em;
 }
 .whatsapp-button {
   font-size: 1rem;
@@ -36,4 +48,18 @@ body {
   text-decoration: none;
   padding: .5em 1em;
   border-radius: .4em;
+  width: 8.0em;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.whatsapp-button_text {
+  width: max-content;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
 }
